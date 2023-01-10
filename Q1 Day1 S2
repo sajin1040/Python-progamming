@@ -1,0 +1,9 @@
+a=int(input("Enter the Number of fresh loaves you want: "))
+b=int(input("Enter the Number of day old loaves you want: "))
+c=185.00
+d=c*b*60/100
+e=a*c
+print("The Regular Price: ",c)
+print("Amount of new loaf: ",e)
+print("Amount of day old loaf: ",d)
+print("Total amount: ",d+e)
