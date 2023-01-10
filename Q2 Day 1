@@ -1,0 +1,17 @@
+I=[]
+n=int(input("enter range of list:"))
+for i in range(n):
+        elements = int(input("enter list elements:"))
+        I.append(elements)
+print(I)
+def sumsquares(I):
+        odd=0
+        even=0
+        for i in I:
+                if i%2==0:
+                        even=even_i**2
+                else:
+                        odd=odd+i**2
+        I=[odd,even]
+        return I
+print (sumsquares(I))
