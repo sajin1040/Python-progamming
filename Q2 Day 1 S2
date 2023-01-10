@@ -1,0 +1,19 @@
+a = input("String 1:")
+b = input("String 2:")
+if (len(a) != len(b)):
+    print("Length not equal, Not isomorphic")
+else:
+    c = {}
+for i in range(len(a)):
+    e = a[i]
+    f = b[i]
+    if (e not in c):
+        c[e] = f
+    else:
+        if e in c:
+            if c[e]!=f:
+                print("Not a isomorphic")
+                break
+            else:
+                print("It is a Isomorphic")
+                break
