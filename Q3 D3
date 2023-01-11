@@ -1,0 +1,11 @@
+n=int(input("Enter the number of elements:"))
+l=[]
+for i in range(n):
+    n1=input("Enter the element:")
+    l.append(n1)
+s=0
+for i in l:
+    a=i.split()
+    if s<len(a):
+        s=len(a)
+print(s)
