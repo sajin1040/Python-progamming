@@ -1,0 +1,18 @@
+N = int(input("Enter a number : "))
+
+def findnumofstr(N):
+	counts = []
+	for i in range(5):
+		counts.append(1)
+
+	for i in range(2, N + 1):
+		for j in range(3, -1, -1):
+			counts[j] += counts[j + 1]
+
+	ans = 0
+
+	for c in counts:
+		ans += c
+	return ans
+
+print("The maximum lexicographical value is", findnumofstr(N))
