@@ -1,0 +1,8 @@
+p = int(input("enter the principal amount:"))
+n = int(input("enter the number of years:"))
+r = 12
+criteria = input("are u senior citizen? (yes/no):")
+if criteria == 'yes':
+    r = 10
+si = (p*n*r)/100
+print("the interest amount is:",si)
