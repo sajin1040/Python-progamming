@@ -1,0 +1,10 @@
+s=input("enter a string: ") 
+s1=input("enter a second string: ") 
+match=0
+for i in range(len(s1)):
+    if s[i] == s1[i]: 
+        match=match+1 
+    else:
+        print("strings are not comparable")
+        break;
+print(match)
