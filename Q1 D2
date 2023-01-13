@@ -1,0 +1,14 @@
+l=[] 
+n=int(input("enter the no of elements in the list: "))
+for i in range(n):
+    l1=int(input("enter list elements one by one: ")) 
+    l.append(l1) 
+print("original list: ",l) 
+x=sorted(l) 
+print("sorted list: ",x) 
+m=int(input("enter Mth maximum number: ")) 
+n=int(input("enter nth minimum number: ")) 
+print(m,"maximum number is: ",x[-m])
+print(n,"minimum number is: ",x[n-1]) 
+print("sum is: ",x[-m]+x[n-1])
+print("differe is: ",x[-m]-x[n-1])
