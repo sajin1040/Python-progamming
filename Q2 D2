@@ -1,0 +1,22 @@
+s=[]
+n=int(input("enter range: ")) 
+for j in range(n):
+    s2=input("enter list items one by one: ")
+    s.append(s2) 
+print(s)
+lower=0
+upper=0
+numeric=0
+for i in s:
+    if i== '*':
+        break;
+    print(i)
+    if i.islower():
+        lower=lower+1 
+    if i.isupper():
+        upper=upper+1 
+    if i.isnumeric():
+        numeric=numeric+1 
+print("count of numbers in the string is: ",numeric) 
+print("count of upper case letters in string is: ",upper)
+print("count of lower case letters in string is: ",lower)
