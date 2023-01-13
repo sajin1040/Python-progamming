@@ -1,0 +1,5 @@
+string=str(input("enter the sting:"))
+str=" "
+for i in string:
+    str=i+str
+print("reversed string:",str)
