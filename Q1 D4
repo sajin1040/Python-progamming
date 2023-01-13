@@ -1,0 +1,4 @@
+names =['banana', 'carrot' ,'radish','apple', 'jack' ]
+names.sort()
+print(names)
+0 comments on commit 319e4
