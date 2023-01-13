@@ -1,0 +1,10 @@
+a=[73,7,-6,2,10,28,-1]
+p_count,n_count=0,0
+for num in a:
+    if num>=0:
+        p_count+=1
+    else:
+        n_count+=1
+
+print("positive number in the list:",p_count)
+print("negative number in the list:",n_count)
