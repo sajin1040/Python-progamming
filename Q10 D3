@@ -1,0 +1,8 @@
+def comb(a):
+    for i in range(3):
+        for j in range(3):
+            for k in range(3):
+                if(i!=j and j!=k and i!=k):
+                    print(a[i],a[j],a[k])
+
+comb([7,8,9])
