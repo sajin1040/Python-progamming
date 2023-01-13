@@ -1,0 +1,19 @@
+size=int(input("Enter the size of the list:"))
+
+
+i=0
+test_list,result_list=[],[]
+for n in range(size):
+    ele=int(input())
+    test_list.append(ele)
+
+while i<len(test_list):
+    k=test_list[i]
+    count=0
+    for j in test_list:
+        if k>j:
+            count=count+1
+    result_list.append(count)
+    i=i+1
+
+print(result_list)
