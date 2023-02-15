@@ -1,0 +1,21 @@
+mathematical operations 
+ x = int(input("Enter value of x: "))
+n = int(input("Enter value of n: "))
+choice = int(input("Enter choice (1 for Pow, 2 for Add, 3 for Sub, 4 for Mul, 5 for Div): "))
+if choice == 1:
+    result = x ** n
+    print("Pow(x,n) = ", result)
+elif choice == 2:
+    result = x + n
+    print("Add(x,n) = ", result)
+elif choice == 3:
+    result = x - n
+    print("Sub(x,n) = ", result)
+elif choice == 4:
+    result = x * n
+    print("Mul(x,n) = ", result)
+elif choice == 5:
+    result = x / n
+    print("Div(x,n) = ", result)
+else:
+    print("Invalid choice")
