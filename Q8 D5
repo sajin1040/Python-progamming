@@ -1,0 +1,27 @@
+program to count prime and composite numbers 
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return False
+    return True
+prime_count = 0
+composite_count = 0
+n = input("Enter the number of integers to be entered: ") 
+try:
+    n = int\
+    for i in range(n):
+        num = input("Enter an integer: ")
+        try:
+            num = int(num)
+            if is_prime(num):
+                prime_count += 1
+            else:
+                composite_count += 1
+        except ValueError:
+            print("Enter integers only")
+except ValueError:
+    print("Enter integers only")
+print("Number of prime numbers: ", prime_count)
+print("Number of composite numbers: ", composite_count)
