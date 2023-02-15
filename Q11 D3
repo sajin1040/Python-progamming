@@ -1,0 +1,17 @@
+def sorting_alphabets(lst,order):
+    if order =="A":
+        s=sorted(lst)
+        for i in s:
+            print(i)
+    else:
+        s=list(reversed(sorted(lst)))
+        for i in s:
+            print(i)
+n=int(input("enter the size if list:"))
+order=input("enter the order(A/D):")
+lst=[]
+for i in range(n):
+    a=input()
+    lst.append(a)
+    
+sorting_alphabets(lst,order)
