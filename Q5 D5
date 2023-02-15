@@ -1,0 +1,15 @@
+def find_frequency(arr):
+    frequency = {}
+    for i in arr:
+        if i in frequency:
+            frequency[i] += 1
+        else:
+            frequency[i] = 1
+    return frequency
+arr = [1, 2, 8, 3, 2, 2, 2, 5, 1]
+frequency = find_frequency(arr)
+
+print("Element | Frequency")
+print("--------------------------")
+for key, value in frequency.items():
+    print(key, "|", value)
