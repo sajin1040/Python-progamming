@@ -1,0 +1,4 @@
+num=input("enter a number")
+print("the reverse number is:")
+for i in reversed(num):
+    print(i,end=' ')
