@@ -1,0 +1,18 @@
+import math
+def gcd_lcm_n_numbers(n, numbers):
+    if n < 1:
+        print("Invalid input")
+    else:
+        gcd = numbers[0]
+        lcm = numbers[0]
+        for i in range(1, n):
+            gcd = math.gcd(gcd, numbers[i])
+            lcm = lcm*numbers[i]//math.gcd(lcm, numbers[i])
+        return gcd, lcm
+n = int(input())
+numbers =[]
+for i in range(n):
+    g=int(input("enter elements:")) 
+    numbers.append(g) 
+print("GCD is:", gcd_lcm_n_numbers(n, numbers)[0])
+print("LCM is:", gcd_lcm_n_numbers(n, numbers)[1])
