@@ -1,0 +1,7 @@
+r=int(input("enter max rows: ")) 
+if r<=0:
+    print("enter positive number")
+for i in range(1,r+1):
+    for j in range(1,i+1):
+        print("%",end=" ") 
+    print("\r")
